@@ -1,0 +1,74 @@
+class Animals:
+
+   def __init__(self, un_type, birth_year, sex):
+            self.un_type = un_type
+            self.birth_year = birth_year
+            self.sex = sex
+
+   def __str__(self):
+        return str(self.un_type) +"   " + str(self.birth_year)+"   " + str(self.sex)
+
+class Farme:
+
+    def __init__(self, name):
+        self.name = name
+        self.list=[]
+
+    def __add__(un_type, birth_year, sex):
+       list.append(Animals(un_type, birth_year, sex))
+       return str(self.un_type) +str(self.birth_year) + str(self.sex)
+
+    def __str__(self):
+       return str(self.name)
+
+if __name__ == "__main__":
+    ran = {}
+    Farm_list = []
+    Farm_list.append(Farme("Première ferme"))
+    Farm_list[0].list.append(Animals("vache" , "15mois" , "mal" ))
+    Farm_list[0].list.append(Animals("chien" , "5ans" , "femmel" ))
+    Farm_list[0].list.append(Animals("mouton" , "13ans" , "mal" ))
+    Farm_list[0].list.append(Animals("poule" , "3mois" , "femmel" ))
+    Farm_list[0].list.append(Animals("vache" , "4mois" , "femmel" ))
+    Farm_list[0].list.append(Animals("vache" , "1ans" , "mal" ))
+
+    
+    Farm_list.append(Farme("Deuxième ferme"))
+    Farm_list[1].list.append(Animals("poule" , "10mois" , "mal" ))
+    Farm_list[1].list.append(Animals("vache" , "9an " , "femmel" ))
+    Farm_list[1].list.append(Animals("vache" , "1.5mois" , "mal" ))
+    Farm_list[1].list.append(Animals("poule" , "5mois" , "femmel" ))
+    Farm_list[1].list.append(Animals("poule" , "3mois" , "femmel" ))
+    
+
+    Farm_list.append(Farme("Troisiéme ferme"))
+    Farm_list[2].list.append(Animals("poule" , "3mois" , "mal" ))
+    Farm_list[2].list.append(Animals("vache" , "1an " , "femmel" ))
+    Farm_list[2].list.append(Animals("poule" , "3mois" , "mal" ))
+    Farm_list[2].list.append(Animals("poule" , "3mois" , "femmel" ))
+
+    
+    print(Farm_list[0])
+    
+    print(Farm_list[0].list[1])
+    print(Farm_list[0].list[2])
+    print(Farm_list[0].list[3])
+    print(Farm_list[0].list[4])
+    print(Farm_list[0].list[5])
+
+    
+    print(Farm_list[1])
+    print(Farm_list[1].list[1])
+    print(Farm_list[1].list[2])
+    print(Farm_list[1].list[3])
+    print(Farm_list[1].list[4])
+
+    
+    print(Farm_list[2])
+    print(Farm_list[2].list[1])
+    print(Farm_list[2].list[2])
+    print(Farm_list[2].list[3])
+    print(Farm_list[2].list[4])
+
+
+   
